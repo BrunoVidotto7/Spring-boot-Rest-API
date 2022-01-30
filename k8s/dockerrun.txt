@@ -1,0 +1,2 @@
+docker run -e FORUM_DATABASE_URL='jdbc:mariadb://localhost:3306/forumDBTest' -e FORUM_DATABASE_USERNAME='root' -e FORUM_DATABASE_PASSWORD='1234' -e SPRING_PROFILES_ACTIVE='prod' glasscode/forum_alura:v1
+

@@ -1,0 +1,17 @@
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: forum-alura
+spec: 
+  containers:
+    - name: forum-alura
+      image: glasscode/forum_alura:v1
+      env:
+      - name: FORUM_DATABASE_URL
+        value: "jdbc:mariadb://localhost:3306/forumDBTest"
+      - name: FORUM_DATABASE_USERNAME
+        value: "root"
+      - name: FORUM_DATABASE_PASSWORD
+        value: "1234"
+      ports:
+        - containerPort: 8080
